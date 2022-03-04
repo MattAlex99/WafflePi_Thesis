@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#auf dem raspi durchführen
+#Denk dran dass das skriot rechte braucht wenn du es automatisieren willst
+
+
+
+#Install required packages on the Raspberry Pi to upload the OpenCR firmware.
+sudo dpkg --add-architecture armhf
+sudo apt-get update
+sudo apt-get install libc6:armhf
+#success
+
+
+export OPENCR_PORT=/dev/ttyACM0
+export OPENCR_MODEL=waffle
+rm -rf ./opencr_update.tar.bz2
+#success
+
+#Download the firmware and loader, then extract the file. 
+wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 
+tar -xvf opencr_update.tar.bz2 
+#success
+
+
+#Upload firmware to the OpenCR. 
+cd ./opencr_update
+./update.sh \$OPENCR_PORT \$OPENCR_MODEL.opencr #use "./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr" if done manually
+
+#success
+
+echo "refer to https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/ to see how a successfull setup should look like"
+echo "alternative link https://emanual.robotis.com/assets/images/platform/turtlebot3/opencr/shell01.png"
+
+echo ""
+
+echo "if Setup fails refer to step 7 in https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/ "

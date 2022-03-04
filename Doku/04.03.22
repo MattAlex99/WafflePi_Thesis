@@ -1,0 +1,24 @@
+
+
+Begin: 9.00
+
+Open Cr setup erfolgreich ausgeführt 
+
+Funktionalität des Roboters erfolgreich getestet (mit dafür bereit gestellten Knöpfen auf Roboter)
+
+Bringup erfolgreich.
+Der Roboter kann jetzt von dem Laptop aus gesteuert werden.
+
+
+Slam node wurde erfolgreich gestartet und getestet.
+
+
+Anfang installation des Greifarmes.
+Problem: Port "/dev/ttyACM0" der laut guide genutzt wird existiert nicht 
+(außerdem ist ein Kabel nicht eingesteckt)
+ttyACM ist desweiterem scheinbar ein USB Port, derAnschluß des Arms aber nicht.
+Der Anschluss des aRms ist ein TLL anschluss 
+siehe:
+https://emanual.robotis.com/docs/en/parts/controller/opencr10/
+
+Treffen mit Frau Ott ist ausgemacht

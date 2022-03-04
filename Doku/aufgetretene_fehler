@@ -1,0 +1,10 @@
+Error: Slam hat nicht funktioniert
+Solution: Slam neu installieren "sudo apt-get install ros-kinetic-slam-gmapping"
+
+E: IP adressen werden nach anpassung nicht verändert 
+S: manuell "source ~/.bashrc" ausführen und ggf "cd ~/catkin_ws && catkin_make"
+
+
+
+E: /dev/ttyACM0 wird nicht gefunden 
+S: Neustarten des Boards in recovery mode (siehe 3.3.7 https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)

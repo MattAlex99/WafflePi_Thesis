@@ -1,0 +1,18 @@
+
+
+Beginn: 12.00
+
+
+Anwesenheit in Furtwangen heute nicht möglich, also Arbeit von zuhause aus, folglich eingeschränkte Möglichkeiten
+
+Statdessen wird grobe recherche  (zur Hard und software) vorgezogen und Verwaltungsarbeiten übernommen.
+
+
+Zeitplan wurde erstellt.
+
+Simulation Gazebo wurde installiert und erfolgreich getested. Möglichkeiten sind noch unbekannt, aber der turtlebot konnte manuell gesteuert werden.
+
+Problem mit dem change_host_ip script wurde erkannt. der Befehl "source ~/.bashrc" wird scheinbar nicht richtig ausgeführt
+ 
+
+Simulationen (welt, Slam und Steuerrung) funktioneieren jetzt einwandfrei 

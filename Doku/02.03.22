@@ -1,3 +1,4 @@
+
 Begin: 9 Uhr
 
 
@@ -6,3 +7,16 @@ Erstellen des Git repositories
 
 vorbereiten des Raspbian images 
 (probleme beim installieren des Imagers)
+
+
+Nach größeren Netzwerkproblemen dann erfolg bei schritt 2 (setup des Bots)
+
+!!Es gab eibn PRoblem das beim cmake ein fehler aufgetreten ist (scheinbar spllen im ordner noch nicht catkindateien gewesen sein)
+konnte mi catkin_make_isolated beoben wirden, wellt aber eine potentielle Hehlerquelle dar.
+
+
+GGf muss der Arbeitsschrit wirderholt werden.
+
+Nicht erledigt wurde die Zeitplanung, ist naczuholen.
+
+Ende 16:15
