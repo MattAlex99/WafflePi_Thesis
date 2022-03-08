@@ -22,3 +22,9 @@ siehe:
 https://emanual.robotis.com/docs/en/parts/controller/opencr10/
 
 Treffen mit Frau Ott ist ausgemacht
+
+
+Bei dem anschließen des Armes hatte ich das Problem dass /dev/ttyACM0 nicht gefunden wurde. 
+Das problem kann gelöst werden, wenn man das Board im recovery modus neu startet (siee doku vom 04.02.22)
+
+Am montag muss Instalation des armes (nur auf Seite des Turtlebots) nocheinmal durchgeführt werden (7.1.4+)

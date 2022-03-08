@@ -1,0 +1,30 @@
+
+Beginn: 9.00
+
+Ziel für heute: Greifarm+ Kammera
+
+
+Fehlersuche bei Kammera. Kammera vaw falsch verbunden (KAbel falsch rum). Schinbar besteht immernoch ein Fehler 
+bei der Verkablung (entweder bei der Connection auf dem Pi oder bei der Suny conecction). Sicherheitshaber Igo fragen.
+
+
+Die unteren joints des Roboters können jetzt bewegt werden. Joint nummer 4 und der Greifarm bewegen sich noch nicht.
+Die vermutung legt nahe, dass Ein fehler bei Joint 4 vorliegt wegen dem  kein Signal weiter geleitet wird. (Das alarmlicht bei Joint 4 blinkt)
+
+Problem vermutlich gefunden. Greifarm will in Position fahren, die nicht möglich ist (Joint 3 über den möglichen Anschlag hinaus anwinkeln) wobei die Servos überlastet werden und sich ausschalten
+==> Steuerung der Joints hat richtig funktioniert, aber dei Greifklaue selber war im falschen Winkel angeschraubt. Das wurde korrigiert, jetzt startet der Greifarm richtig  und Simulation und Tatsächliche Bewegung stimmen überein.
+
+!!Die Greifklaue ist falsch zusammen gebaut. Momentan öffnet sie sich wenn man den Befehl zum schließen gibt und umgekehrt!!!
+
+!!Greifarm und Lidar Sensor des Roboters sind falsch angebracht!!
+
+
+
+Alle Fehler die der vorgänger beim Zusammenbauen gemacht hat, die bisher gefunden worden:
+Joint 1 falsch rum
+Lidar und Greifarm an falscher Position
+Kammera falsch mit Raspi verbunden
+Kralle war 90 Grad versetzt angebracht 
+Kralle öffnet wenn sie schließen soll und umgekehrt (genauer grund für Fehler noch nicht gefunden aber vermutlich Hardware)
+
+
