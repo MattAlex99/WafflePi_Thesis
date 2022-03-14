@@ -9,47 +9,12 @@ class ReadJoints():
         # initiliaze
 	
         rospy.init_node('read', anonymous=False)
-
-
-
-        # What function to call when you ctrl + c
-        rospy.on_shutdown(self.shutdown)
-
-        # Create a publisher which can "talk" to TurtleBot and tell it to move
-        # Tip: You may need to change cmd_vel_mux/input/navi to /cmd_vel if you're not using TurtleBot2
         self.cmd_vel = rospy.Subscriber('joint_state', JointState, queue_size=10, callback=self.callback)
+	rospy.loginfo("Node started and repeating")
+	rospy.spin()
 
-        # TurtleBot will stop if we don't keep telling it to move.  How often should we tell it to move? 10 HZ
-        r = rospy.Rate(10);
-	print ("a")
-	rospy.loginfo("b")
-	rospy.loginfo(self.cmd_vel)
-	rospy.loginfo("logind stuff")
-        rospy.loginfo (self.cmd_vel.name)
-       	rospy.loginfo(self.cmd_vel.position)
-        # as long as you haven't ctrl + c keeping doing...
-        while not rospy.is_shutdown():
-            # publish the velocity
-            print (self.cmd_vel.name)
-            print(self.cmd_vel.position)
-
-            # wait for 0.1 seconds (10 HZ) and publish again
-            r.sleep()
-
-    def shutdown(self):
-        # stop turtlebot
-        rospy.loginfo("Stop TurtleBot")
-        # sleep just makes sure TurtleBot receives the stop command prior to shutting down the script
-        rospy.sleep(1)
-
-    def callback(self, data):
-	print("in callback")
-        # Convert image to OpenCV format
-        try:
-      	    rospy.loginfo (self.cmd_vel.name)
-       	    rospy.loginfo(self.cmd_vel.position)
-        except CvBridgeError as e:
-            print(e)
+    def callback(data):
+        rospy.loginfo("I heard %s",data.data)
 
 
 if __name__ == '__main__':
