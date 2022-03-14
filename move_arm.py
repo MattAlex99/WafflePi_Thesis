@@ -22,7 +22,7 @@ class ReadJoints():
         # TurtleBot will stop if we don't keep telling it to move.  How often should we tell it to move? 10 HZ
         r = rospy.Rate(10);
 	rospy.loginfo("logind stuff")
-        rospy.loginfo ("name:",self.cmd_vel.name)
+        rospy.loginfo (self.cmd_vel.name)
        	rospy.loginfo(self.cmd_vel.position)
         # as long as you haven't ctrl + c keeping doing...
         while not rospy.is_shutdown():
