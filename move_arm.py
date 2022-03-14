@@ -7,10 +7,10 @@ from sensor_msgs.msg import JointState
 class ReadJoints():
     def __init__(self):
         # initiliaze
-        rospy.init_node('GoForward', anonymous=False)
+        rospy.init_node('Read Joints', anonymous=False)
 
         # tell user how to stop TurtleBot
-        rospy.loginfo("To stop TurtleBot CTRL + C")
+        rospy.loginfo("Nothing to log")
 
         # What function to call when you ctrl + c
         rospy.on_shutdown(self.shutdown)
@@ -21,7 +21,8 @@ class ReadJoints():
 
         # TurtleBot will stop if we don't keep telling it to move.  How often should we tell it to move? 10 HZ
         r = rospy.Rate(10);
-
+        print ("name is",self.cmd_vel.name)
+        print(self.cmd_vel.position)
         # as long as you haven't ctrl + c keeping doing...
         while not rospy.is_shutdown():
             # publish the velocity
