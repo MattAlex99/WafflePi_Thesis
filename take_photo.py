@@ -57,6 +57,14 @@ class TakePhoto:
             return True
         else:
             return False
+    
+    def callback(self, data):
+	print("in callback")
+        # Convert image to OpenCV format
+        try:
+            cv_image = self.bridge.compressed_imgmsg_to_cv2(data, "bgr8")
+        except CvBridgeError as e:
+            print(e)
 
 if __name__ == '__main__':
 

@@ -23,7 +23,6 @@ class ReadJoints():
         r = rospy.Rate(10);
 	print ("a")
 	rospy.loginfo("b")
-	print (self.cmd_vel)
 	rospy.loginfo(self.cmd_vel)
 	rospy.loginfo("logind stuff")
         rospy.loginfo (self.cmd_vel.name)
@@ -42,6 +41,15 @@ class ReadJoints():
         rospy.loginfo("Stop TurtleBot")
         # sleep just makes sure TurtleBot receives the stop command prior to shutting down the script
         rospy.sleep(1)
+
+    def callback(self, data):
+	print("in callback")
+        # Convert image to OpenCV format
+        try:
+      	    rospy.loginfo (self.cmd_vel.name)
+       	    rospy.loginfo(self.cmd_vel.position)
+        except CvBridgeError as e:
+            print(e)
 
 
 if __name__ == '__main__':
