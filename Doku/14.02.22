@@ -1,0 +1,16 @@
+Arbeitsbeginn: 9.30
+
+
+Ziel für heute ist es den Roboter via Code zu steuern, also Fahren, orientieren (delayed wegen abwesenheut des Sensord), Bilder machen und manipulator.
+
+Lernressource: https://github.com/markwsilliman/turtlebot/
+
+Skript für Kammera läuft.
+
+Bewegung (ansteuern der Räder, nicht Navigation zu bestimmtem Punkt) funktioniert 
+
+Das auslesen der Arm Daten durch das Topic joint_states funktioniert jetzt
+
+
+
+SPäter muss noch nachgeschaut werden, wie eigene ros Packete erstellt werden können (http://wiki.ros.org/ROS/Tutorials/CreatingPackage) 

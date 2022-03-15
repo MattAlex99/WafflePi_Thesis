@@ -1,0 +1,10 @@
+Begin_9.00
+
+Viel Problemlösung zur Kamemra.
+Problem ist, dass die Installation nach guide das installieren von ros-kinetic* paketen mit apt vorsieht, diese aber in keiner Source list des Raspbery pi's enthalten sind. Nach sehr viel schmerzhaftem rumgesuche konnte ich rausfinden wie ich die nötigen Pakete (ohne apt) installieren kann. (make ist noch nicht abgeschlosen.)
+
+Greifarm wurde noch nicht korrigiert. Die Arbeit an der Kammera hat einen ganzen Tag eingenommen.
+
+Am ende nicht erfolgreich. Die raspicam Node kann nicht gestartet werden. Morgen Setup von neuer SD Karte und schauen ob es darauf installierbar ist.
+
+hier sind noch von meinem guide abweichende installationanweisungen https://github.com/UbiquityRobotics/raspicam_node

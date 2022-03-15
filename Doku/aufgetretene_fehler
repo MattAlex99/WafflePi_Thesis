@@ -8,3 +8,8 @@ S: manuell "source ~/.bashrc" ausführen und ggf "cd ~/catkin_ws && catkin_make"
 
 E: /dev/ttyACM0 wird nicht gefunden 
 S: Neustarten des Boards in recovery mode (siehe 3.3.7 https://emanual.robotis.com/docs/en/platform/turtlebot3/opencr_setup/#opencr-setup)
+
+
+
+E: Paket wird nicht mit apt gefunden
+S: MAnuell installieren mit git clone -b BRANCH GIT_REPO, wohei man das repo hier http://repositories.ros.org/status_page/ros_kinetic_default.html?q=camera_in&s=1 und den branch im Wiki nachschauen kann (einfach namen googeln)

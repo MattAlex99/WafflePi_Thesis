@@ -1,0 +1,25 @@
+
+
+Beginn 9:00
+
+
+Durchbruch bei dem bewegen des Roboter arms. Der verwendete Code war korrekt, allerdings benötight dieser dass auf dem Rechner die moveit nodes gestartet werden 
+	roslaunch turtlebot3_manipulation_bringup turtlebot3_manipulation_bringup.launch
+	roslaunch turtlebot3_manipulation_moveit_config move_group.launch
+
+Der Arm kann jetzt angesteuert werden. Es müssen noch die Winkel der Motoren angegeben werden, das angeben von x y z koordinaten ist das nächste ziel.
+
+
+ 
+
+Mehrstündige Unterbre hung wegen Tutorium
+
+
+Der Arm kann jetzt nach Position (x,y,z) und orientation (qx,qy,qz,w) eingestellt werden (beispiel Skript besteht).
+Ich verstehe aber noch nicht was genau orientation ist. Versuche mit einstellen der Position via joints und auslesen der Orientation waren erfolgslos. 
+
+Das ist erste aufgabe für morgen.
+
+
+
+Ende 16:00
