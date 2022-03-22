@@ -11,6 +11,7 @@ import moveit_commander
 import moveit_msgs.msg
 import geometry_msgs.msg
 import time
+import numpy as np
 
 print('1 for target by joint values, 2 for absolute position')
 
@@ -41,14 +42,26 @@ else:
 	y=input()
 	print ('please input z')
 	z=input()
-	print ('please input qx')
-	qx=input()
-	print ('please input qy')
-	qy=input()
-	print ('please input qz')
-	qz=input()
-	print ('please input qw')
-	qw=input()
+	print ('please input pitch (in rad)')
+	pitch=input()
+	roll=0
+	
+	signum_helper= np.sign(x)* np.sign(y)
+
+	yaw =np.arctan(np.abs(y)/(np.abs(x)+0.08)) 
+	print(yaw)
+	if signum_helper != 0:
+		yaw=yaw*signum_helper
+
+
+	print (roll,pitch, yaw)
+
+  	qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+  	qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
+  	qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
+  	qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+
+
 	target_pose=[x,y,z,qx,qy,qz,qw]
 
 
@@ -113,7 +126,6 @@ def take_pose(target_pose):
 	arm_group.stop()
 	arm_group.clear_pose_targets()
 	variable = arm_group.get_current_pose()
-	print (variable.pose)
 	rospy.sleep(1)
 	
 
@@ -140,9 +152,7 @@ gripper_group_variable_values = gripper_group.get_current_joint_values()
 ###### Main ########
 
 if input_mode==2:
-	#curr_pose = arm_group.get_current_pose()
-	#move_home();
-	#time.sleep(3)
+
 	take_pose(target_pose)
 	time.sleep(3)
 	print(arm_group.get_current_pose())
