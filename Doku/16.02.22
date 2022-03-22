@@ -1,0 +1,23 @@
+
+
+Beginn 9_00
+
+Vormitags versuche herauszufinden wie orienation bei open manipulator mit Position und joint values zusammen hängt.
+gesammten Vormittag keinen erfolg.
+Bisher ist nur klar, dass 0 0 0 1 bedeutet, dass der Arm in Richtung des Roboters schaut
+und das 0 0 0 0 bedeutet das der arm entgegen der Richtung des roboters schaut.
+Genau nach rechts  
+
+w scheint anzugeben, ob die kralle richtig rum ist oder auf dem Kopf steht
+
+Problem wurde identifiziert, das der neue Lidar Sensor sich ausschaltet, sobald ein Bringup ausgeführt wird.
+
+Es wird getestet, ob der Lidar notwendig ist um der Skript zu testen, das den Roboter an eine gewollte Position fahren lässt
+
+
+Erstellen eines Backup images um Datenverlust vorzubeugen.
+
+
+Lidar scheint notwendig zu sein, um die Navigation zu testen, also wurde mit der Smiulation gearbeitet.
+
+Das Erstellen von 2D Karten und das Navigieren zu einem gewünschten Punkt (Skript und GUI) funktioniert

@@ -1,0 +1,48 @@
+https://towardsdatascience.com/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006
+
+
+Yolo 	kann 45 bilder pro sec verarbeiten 
+	versteht generalisirungen (relativ einfach trainierbar)
+	arbitet wie fcnn (fully convolutional) und extrahiert features nur einmal für mehrere vorhersagen (Bounding boxes und klassen)
+	macht vorhersagen für bounding boxes und class propabilities(vgl. segmentation)	
+	berücksichtigt den Kontext eines Bildes (anderst als sliding window)
+	für verschiedene domänen anwendbar
+
+	Bild wird in S*S felder aufgeteilt, für die dann Klassen vorhersagen gemacht werden (eine für jede Klasse)
+		Wenn Intersection over union zwischen bounding boxes und den Klassen vorhersagen feldern gut ist 
+
+	Vorhersagen bestehen aus 5 Werten x,y (position des mittelpunktes), w,h (breite und höhe relativ zum gesammten Bild ) 
+		und wahrscheinlichkeit (Intersection over untion zwischen der vorhergesagten und Ground truth box)
+
+	Jede zelle berechnet "conditional class propabilities"
+
+	Workflow:
+		Bild wird in S*S Felder unterteilt
+		Für jedes Feld wird für jede Klasse die Wahrscheinlichkeit berechnet, dass die Klasse im Feld vertreten ist
+		Für jedes Feld werden B element N Bounding boxes vorher gesagt (Position und derren wahrscheinlichkeit relevant zu sein)
+		Berechnen der Bounding boxes, die wissen, welche OBjekte sie beinhalten
+		siehe https://miro.medium.com/max/700/1*m8p5lhWdFDdapEFa2zUtIA.jpeg
+
+	Schwächen:
+		Probleme bei vielen nahe beieinander liegenden Objekten //bei mir egal wegen begrenzter Anzahl an Objekten
+		Probleme bei ungewöhnlichen seitenverhältnissen von Objekten (aspect Ratio) //nur begrenzt ein Problem
+		Grobe Features für Bounding Boxes --> ungenauigkeit 
+
+Fast YOLO: hat nur 9 stat 24 Conv LAyers, alles andere ist gleich //ggf erwähnung wert, da das zu erkennende objekt sich durch Form und Farbe 	
+		stark von der Umgebung abgrenzt
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

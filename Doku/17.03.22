@@ -1,0 +1,35 @@
+
+
+
+Beginn: 9:10 
+
+
+Da alle Grundfunktionen, die notwendig sind (bwewgung, Kammera, manipulator) jetzt funktionieren und via scriptgesteuert werden können  
+
+
+Durch hilfe eines Studis habe ich erfahren, dass die Orientierung durch Quaternion angegeben wird, recherche folgt
+
+ qx = np.sin(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) - np.cos(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+  qy = np.cos(roll/2) * np.sin(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.cos(pitch/2) * np.sin(yaw/2)
+  qz = np.cos(roll/2) * np.cos(pitch/2) * np.sin(yaw/2) - np.sin(roll/2) * np.sin(pitch/2) * np.cos(yaw/2)
+  qw = np.cos(roll/2) * np.cos(pitch/2) * np.cos(yaw/2) + np.sin(roll/2) * np.sin(pitch/2) * np.sin(yaw/2)
+ 
+Komlet intuitiv. Nicht?
+
+
+Grundlegende Recherche zur Bestimmung der Entfernung von Objekten.
+
+Aufstellen eines Lösungsansatz für Objekte beliebiger größe, bei dem sich der Roboter einmal bewegt:
+
+
+
+d0=-delta_d/( (n0/n1) - 1)
+
+
+mit n0 = prozent der Pixel, die das objekt in höhe oder breite einnimmt (vor bewegung)
+mit n1 = prozent der Pixel, die das objekt in höhe oder breite einnimmt (nach bewegung)
+//n0 und n1 sind aus bild einfach ableitbar
+
+d0= ursprüngliche Entfernung des Roboters zum Zeitpunkt der ersten Messung
+delta_d = vom Roboter zurück gelegte entfernung zwischen messungen
+d1= entfernung des Roboters zum Zeitpunkt der zweiten Messung

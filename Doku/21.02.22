@@ -1,0 +1,18 @@
+
+
+
+Beginn 9:00
+
+Am Wochenende wurden die zu greifenden Objekte vorbereitet. Einfache Fahnenmäste. Farbe fehlt noch.
+
+Treffen Frau Ott: YOLO Framework soll benutzt werden, Bis Donnerstag Objekte greifen, aufheben und wieder absetzen
+
+Greifen von Objekten via GUI funktioniert einban frei 
+
+Nächstes Ziel: Berechnen des Orientierung der Kralle aus ihrer Position
+
+Zwischenläufiges Problem gelöst. Berechnungen wahren falsch, weil der nullpunkt nicht auf der Kralle, sondern bei dem Lidar Sensor liegt
+
+Weitere Code Probleme gelöst, die Kralle kann jetzt mit Code bewegt werden.
+
+Es ist zu empfehlen die Höhe (wert z beim aufheben von objekten zwischen 0.1 (mit w=0) und 0.15 (mit w=0.5) zu setzen)
