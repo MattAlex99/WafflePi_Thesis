@@ -9,10 +9,10 @@ else
 	echo "not starting roscore"		
 fi
 
-gnome-terminal  -- sshpass -p 'Thesis123' ssh pi@141.28.75.246
+gnome-terminal  -- sshpass  ssh pi@141.28.75.246
 read -p "Starten sie das Bringup des Roboters und drücken sie y um den bringup fort zu setzen (ssh ppi@141.28.75.246)"
 
-gnome-terminal  -- sshpass -p 'Thesis123' ssh pi@141.28.75.246
+gnome-terminal  -- sshpass  ssh pi@141.28.75.246
 read -p "please execute 'roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch' and then press any key to continue"
 
 echo "starting image view"

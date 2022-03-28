@@ -11,7 +11,7 @@ else
 	echo "not starting roscore"		
 fi
 
-gnome-terminal  -- sshpass -p 'Thesis123' ssh pi@141.28.75.246
+gnome-terminal  -- sshpass  ssh pi@141.28.75.246
 read -p "Starten sie das Bringup des Roboters und drücken sie y um den bringup fort zu setzen"
 
 echo "starting manipulation"
