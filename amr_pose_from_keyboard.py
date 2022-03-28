@@ -46,9 +46,10 @@ else:
 	pitch=input()
 	roll=0
 	
-	signum_helper= np.sign(x)* np.sign(y)
+	
+	signum_helper= np.sign(x+0.080001)* np.sign(y)
 
-	yaw =np.arctan(np.abs(y)/(np.abs(x)+0.08)) 
+	yaw =np.arctan(np.abs(y)/(np.abs(x)+0.080001)) 
 	print(yaw)
 	if signum_helper != 0:
 		yaw=yaw*signum_helper
