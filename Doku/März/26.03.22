@@ -1,0 +1,16 @@
+
+
+
+Beginn 9:00
+
+Geplant: rausfinden warum resizing so lange dauert, 
+erstellen einer VM, auf der das Training ungestört laufen kann (auch mit test daten )
+
+
+
+
+Erkentniss: resizingist teil des Trainings (jedes Bild wird mehrfach ge resized)
+	    evtl könnte das abspeichern von bildern in quadratische form (NxN) diePErformance verbessern
+
+
+setup der VM hat funktioniert, nur noch Probleme bei der Versionierung von Python 

@@ -1,0 +1,14 @@
+Beginn 9:00
+
+
+Ziele:
+	Geplant heute ist das Fixen des Skriptes, dass txt labels in xml labels überführt und das schreiben des Monatberichtes
+	Tiefgehendere Zeitplanung (wann soll 2D erkennung fertig sein, 1. Version der 3D Positions erkennung )
+	Genau verstehen, was der IOU Loss bei yolo bedeutet (gefühl für zahlen entwickeln) /recherche zu YoloV3
+
+Problem mit dem Skript gelöst. 1x höhe und breite in Berechnung vertauscht, 2x orginaldaten falsch aufgefasst. x und y haben die mitte des vierecks angegeben, ich  dachte aber, dass es die ecke links oben sei
+
+
+Training läuft jetzt durch und erzeugt ergebnisse, die die Lernfähigkeit beweisen 
+Es gibt aber immernoch viele Redundante erkennungen (selbes Objekt wird n mal erkannt)
+

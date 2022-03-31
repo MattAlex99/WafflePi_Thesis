@@ -13,3 +13,11 @@ S: Neustarten des Boards in recovery mode (siehe 3.3.7 https://emanual.robotis.c
 
 E: Paket wird nicht mit apt gefunden
 S: MAnuell installieren mit git clone -b BRANCH GIT_REPO, wohei man das repo hier http://repositories.ros.org/status_page/ros_kinetic_default.html?q=camera_in&s=1 und den branch im Wiki nachschauen kann (einfach namen googeln)
+
+
+
+
+E: Beim import cv2 ImportError: /opt/ros/kinetic/lib/python2.7/dist-packages/cv2.so: undefined symbol: PyCObject_Type
+S: sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
+revert: sys.path.add('/opt/ros/kinetic/lib/python2.7/dist-packages')
+

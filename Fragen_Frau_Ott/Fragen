@@ -1,4 +1,9 @@
 
+
+
+
+Frage wegen Rechenleistung: Bw cloud oder Beiuni eine VM aufsetzen (was ist empfehlung)
+
 Buch: Multiple View Geomertry in Computer Vision. Richard hartely.
 
 
@@ -8,11 +13,11 @@ Karte wird in Topic map veröffentlicht, dort kann die neue Karte immer gegriffe
 MAchine Learning framewok: YOLO
 Frage ob auf PC oder auf Raspy
 
-Bis donnerstag Greifen von Objekt.
-
-Quaternion
 
 
-Move group interface tutorial orientation vs position
+Todo:
 
-IMU Messages
+Packet definieren (nötig wenn eigene NAchrichten deffiniert werden)
+
+
+

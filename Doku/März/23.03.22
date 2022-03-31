@@ -1,0 +1,16 @@
+
+
+Beginn 9:05
+
+Ziel: ERstellen eines Programmes, dem die Position eines objektes übergeben wird, dass dann aufgehoben wird
+
+
+Rooter wurde exakt vermessen
+MAximalreichweite des Armes austesten 
+--> Definition des Raumes. in dem Der Roboterarm bewegt werden kann.
+
+Skript anpassung, sodass jetzt eine Vorbewegung eingeplant ist, die dafür sorgt, dass das Objekt nicht hingeworfen wird.
+Funktioniert jetzt, als y empfielt sich 0.08 und als w 0.7
+
+Problem, dass manche Bewegungen nicht ausgeführt werden, wenn man zu viele hintereinander befiehlt besteht
+

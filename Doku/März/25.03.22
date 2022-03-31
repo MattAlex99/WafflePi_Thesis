@@ -1,0 +1,16 @@
+Beginn 9:05
+
+ERstellen von Bringup skripten, die dass Starten des Roboters angenehmer machen.
+
+Aufnehmen der ersten Bild daten und labeln dieser. 
+Sehr Kleines Sett mit nur etwa 100 Bildern (dient nur zu Testzwecken)
+
+ERste Versuche das Yolo Modell zu trainieren (mit vorgegebenem Datenset)
+	reine installations prüfung 
+
+
+Batch bröße beeinflusst die Trainingsgeschwindigkeit sehr stark (zu Testzwecken auf 2 reduziert)
+Training mit GPU extrem langsam. neuer test wird mit
+textausgabe "resizing NxN" kommt immer wieder und dauert lange 
+
+Geplant ist recherche warum das vorkommt/lange dauert, dann 

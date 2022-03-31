@@ -1,0 +1,19 @@
+
+
+Beginn: 11:30 (wegen Tutorium)
+//während Tutorium recherhe zum Bestimmen der Entfernung von Objekten mit Neuronalen netzen
+(Paper und Code gefunden, aber erklärungen des "wie" lassen zu wünschen übrig)
+https://github.com/tzutalin/labelImg
+
+Tool ausgesucht und installiert, mit dem Bilder gelabelt werden können
+labelimg //Name ist auch konsolenbefehl zum ausführen 
+
+Besprechung mit Frau Ott, sie schien zufreden zu sein.
+
+Arbeit an einem Skript, das Automatisch Bilder der Kammera aufniimmt und diese unter geeignetem Namen abspeichert 
+(Fehler in bestehendem Skript behobenund es so angepasst, dass mehrere Bilder gespeichert werden)
+
+
+
+Morgen: Deffineiren einer Config Datei für die Kammera (https://github.com/UbiquityRobotics/raspicam_node)
+pfad für .yaml wird angezeigt wenn man die node startet

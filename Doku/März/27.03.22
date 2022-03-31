@@ -1,0 +1,17 @@
+Beginn 9:10
+
+Größere git probleme vom Vortag gelöst.
+ML Programm läuft jetzt endlich auf der VM
+
+Nächster schritt ist es die Gespeicherten Label daten meines eigenen PRogramms in eine Form zu bringen, die das Programm nutzen kann (generell eine Methode zu schreiben, die Bilder und Lebels verwertet/sortiert) 
+
+Skript wurde erstellt.
+
+
+Erster Test mit eigenen Daten (Training an 4 Bildern mit selben train und val um die Lernfähigkeit zu testen)
+
+kein Trainingserfolg, da x,y daten falsch gespeichert wurden
+
+
+
+Todo für morgen: Skript, dass zum überprüfen der erstellten labels dient (einzeichnen der ausgegebenen werte uin Bild )

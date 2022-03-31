@@ -1,7 +1,7 @@
 https://towardsdatascience.com/yolo-you-only-look-once-real-time-object-detection-explained-492dc9230006
 
 
-Yolo 	kann 45 bilder pro sec verarbeiten 
+Yolo: 	kann 45 bilder pro sec verarbeiten 
 	versteht generalisirungen (relativ einfach trainierbar)
 	arbitet wie fcnn (fully convolutional) und extrahiert features nur einmal für mehrere vorhersagen (Bounding boxes und klassen)
 	macht vorhersagen für bounding boxes und class propabilities(vgl. segmentation)	
@@ -27,15 +27,27 @@ Yolo 	kann 45 bilder pro sec verarbeiten
 		Probleme bei vielen nahe beieinander liegenden Objekten //bei mir egal wegen begrenzter Anzahl an Objekten
 		Probleme bei ungewöhnlichen seitenverhältnissen von Objekten (aspect Ratio) //nur begrenzt ein Problem
 		Grobe Features für Bounding Boxes --> ungenauigkeit 
+		Schwere von Fehlern wird absolut und nicht relativ zur Größe der Box gemessen
 
 Fast YOLO: hat nur 9 stat 24 Conv LAyers, alles andere ist gleich //ggf erwähnung wert, da das zu erkennende objekt sich durch Form und Farbe 	
 		stark von der Umgebung abgrenzt
 
+YOLOv2:
+	Batch normalisation ersetzt dropout 
+	Bounding boxes werden mit anchor boxes erstellt (geringere genauigkeit, aber mehr mögliche Boxen) //klingt schlecht für mich 
+	PAss  through Layer wird benutzt um um feine features durch zu reichen
 
 
-	
 
 
+
+
+
+//ab hier
+https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+
+
+YOLOv3	
 
 
 
